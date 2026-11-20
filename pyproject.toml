@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decider-grader"
+version = "0.1.0"
+description = "Grade free-text student answers with fast decision models, calibration, teacher anchors, triage and prompt-injection guards."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []          # standard library only
+
+[tool.setuptools]
+packages = ["decider_grader"]
+
+[tool.setuptools.package-data]
+decider_grader = ["default_calibration.json"]

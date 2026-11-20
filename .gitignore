@@ -1,0 +1,33 @@
+# --- secrets: NEVER commit ---
+.env
+.env.*
+*.key
+openrouter.txt
+cline.txt
+*api_key*
+*apikey*
+secrets*
+
+# --- caches / local data ---
+__pycache__/
+*.pyc
+.cache/
+cache/
+data/
+*.tmp
+
+# --- datasets are not redistributed (see README) ---
+real_*.json
+hold_*.json
+ar_all.json
+*.parquet
+*.zip
+
+# --- misc ---
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.idea/
+.vscode/
