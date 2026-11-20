@@ -1,4 +1,6 @@
-# decider-grader
+# AI-Grade-Engine
+
+مساعد تصحيح للإجابات الحرة (جمل قصيرة ومقالات) يعتمد على نماذج القرار السريعة والرخيصة: درجات معايَرة ومتسقة، فرز بالثقة، وحماية من حقن التعليمات. مجاني التشغيل، وللمساعدة لا لاستبدال المعلم.
 
 Grade free-text student answers (short answers and essays) with a fast, cheap **decision model**
 (a model that returns a probability for each option instead of generating text), plus calibration,
@@ -29,7 +31,7 @@ Re-running the same answer changes the score by ~0.4 points on average (A+ decis
 No dependencies (standard library only), Python 3.9+.
 
 ```bash
-git clone <your-fork-url> && cd decider-grader
+git clone https://github.com/ALzaio/AI-Grade-Engine.git && cd AI-Grade-Engine
 export OPENROUTER_API_KEY=sk-or-...      # Windows PowerShell: $env:OPENROUTER_API_KEY="sk-or-..."
 python examples/quickstart.py
 ```
